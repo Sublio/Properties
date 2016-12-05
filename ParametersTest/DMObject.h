@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DMObject : NSObject
+@interface DMObject : NSObject <NSCopying>
 
 @end

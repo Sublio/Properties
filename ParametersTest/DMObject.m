@@ -10,10 +10,26 @@
 
 @implementation DMObject
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"Object is created");
+    }
+    return self;
+}
+
 -(void) dealloc {
     
     
     NSLog(@"Object is deallocated");
+}
+
+
+- (id)copyWithZone:(nullable NSZone *)zone{
+    
+    
+    return [[DMObject alloc]init];
 }
 
 @end

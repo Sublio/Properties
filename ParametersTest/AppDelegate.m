@@ -19,11 +19,20 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
-    DMObject *object = [[DMObject alloc] init];
     
+    [self testObject];
+
     
+    NSLog(@"Test is over");
     
     return YES;
+}
+
+-(void)testObject {
+    
+    DMObject *obj = [[DMObject alloc] init];
+    
+    self.object = obj;
 }
 
 
